@@ -1,5 +1,6 @@
 /doc/презентация.pdf
 /plots/
+/results/
 
 __pycache__/
 *.py[cod]

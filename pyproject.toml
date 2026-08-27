@@ -15,7 +15,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-test = ["pytest>=7.4"]
+test = [
+    "pytest>=7.4",
+    "sympy>=1.12",
+]
 
 [project.scripts]
 numerical-solutions = "numerical_solutions.cli:main"
@@ -27,3 +30,6 @@ where = ["src"]
 addopts = "-ra"
 pythonpath = ["src"]
 testpaths = ["tests"]
+markers = [
+    "symbolic: exact and high-precision verification of the source equations",
+]
